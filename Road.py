@@ -58,7 +58,7 @@ E11 = W.addNode("E11", 5, 0)
 
 #E <-> W direction: signal group 0
 for n1,n2 in [[W1, I1], [I1, I2], [I2, I3], [I3, I4], [I4, E1]]:
-    W.addLink(n2.name+n1.name, n2, n1, length=500, free_flow_speed=50, jam_density=0.2, number_of_lanes=3, signal_group=0)
+    W.addLink(n2.name+n1.name, n2, n1, length=500, free_flow_speed=50, jam_density=0.5, number_of_lanes=5, signal_group=0)
     
 #N -> S direction: signal group 1
 for n1,n2 in [[N1, I1], [I1, S1], [N3, I3], [I3, S3]]:
@@ -70,7 +70,7 @@ for n1,n2 in [[N2, I2], [I2, S2], [N4, I4], [I4, S4]]:
 
 #W -> E direction: signal group 3
 for n1,n2 in [[E11, I41], [I41, I31], [I31, I21], [I21, I11], [I11, W11]]:
-    W.addLink(n2.name+n1.name, n2, n1, length=500, free_flow_speed=50, jam_density=0.2, number_of_lanes=3, signal_group=0)
+    W.addLink(n2.name+n1.name, n2, n1, length=500, free_flow_speed=50, jam_density=0.5, number_of_lanes=2, signal_group=0)
      
 
 # random demand definition every 30 seconds
