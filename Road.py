@@ -68,6 +68,7 @@ for n1,n2 in [[N1, I1], [I1, S1], [N3, I3], [I3, S3]]:
 for n1,n2 in [[N2, I2], [I2, S2], [N4, I4], [I4, S4]]:
     W.addLink(n2.name+n1.name, n2, n1, length=500, free_flow_speed=30, jam_density=0.2, signal_group=1)
 
+#W -> E direction: signal group 3
 for n1,n2 in [[E11, I41], [I41, I31], [I31, I21], [I21, I11], [I11, W11]]:
     W.addLink(n2.name+n1.name, n2, n1, length=500, free_flow_speed=50, jam_density=0.2, number_of_lanes=3, signal_group=0)
      
