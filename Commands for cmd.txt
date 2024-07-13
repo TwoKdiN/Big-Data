@@ -1,0 +1,26 @@
+#########
+Zookeeper
+#########
+
+In C:\kafka> .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+
+#########
+Server
+#########
+
+In C:\kafka> .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+
+#########
+Producer
+#########
+
+In C:\kafka\bin\windows> kafka-console-producer.bat --broker-list localhost:9092 --topic test
+
+
+#########
+Consumer
+#########
+
+In C:\kafka\bin\windows> kafka-console-consumer.bat --topic test --bootstrap-server localhost:9092 --from-beginning

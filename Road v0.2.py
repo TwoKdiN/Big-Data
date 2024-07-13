@@ -77,11 +77,14 @@ W.adddemand('Start03', 'Dest0', 400, 3000, 0.8)
 #Execute
 W.exec_simulation()
 
-W.analyzer.print_simple_stats()
+#W.analyzer.print_simple_stats()
 
-W.analyzer.vehicle_trip_to_pandas()
+#W.analyzer.vehicle_trip_to_pandas()
 
-W.show_network()
+# W.show_network()
+
+# print(W.analyzer.vehicles_to_pandas())
+# W.analyzer.output_data()
 
 # #Create GIF
 W.analyzer.network_fancy(animation_speed_inverse=15, sample_ratio=0.3, interval=3, trace_length=5, network_font_size=1)
@@ -89,9 +92,9 @@ W.analyzer.network_fancy(animation_speed_inverse=15, sample_ratio=0.3, interval=
 with open("out/anim_network_fancy.gif", "rb") as f:
     display(Image(data=f.read(), format='png'))
     
-#Create GIF    
-W.analyzer.network_anim(detailed=0, network_font_size=1, figsize=(6,6))
+# #Create GIF    
+# W.analyzer.network_anim(detailed=0, network_font_size=1, figsize=(6,6))
 
-from IPython.display import display, Image
-with open("out/anim_network0.gif", "rb") as f:
-    display(Image(data=f.read(), format='png'))
+# from IPython.display import display, Image
+# with open("out/anim_network0.gif", "rb") as f:
+#     display(Image(data=f.read(), format='png'))
