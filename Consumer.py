@@ -3,7 +3,7 @@ import json
 
 # Kafka configuration
 KAFKA_BROKER = 'localhost:9092'
-TOPIC = 'test2'
+TOPIC = 'test'
 
 # Create Kafka consumer
 consumer = KafkaConsumer(

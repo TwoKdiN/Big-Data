@@ -4,12 +4,16 @@ Zookeeper
 
 In C:\kafka> .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 
+~/kafka/bin/zookeeper-server-start.sh ~/kafka/config/zookeeper.properties 
+
 
 #########
 Server
 #########
 
 In C:\kafka> .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties
 
 
 #########
@@ -24,3 +28,22 @@ Consumer
 #########
 
 In C:\kafka\bin\windows> kafka-console-consumer.bat --topic test --bootstrap-server localhost:9092 --from-beginning
+
+
+#########
+Topic
+#########
+
+cd kafka
+twokdin@Air-TwoKdiN kafka % bin/kafka-topics.sh --create --topic test2 --bootstrap-server localhost:9092
+
+
+~/spark/bin/spark-submit \
+--packages org.apache.spark:spark-streaming-kafka-0-10_2.12:3.0.1,org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.1 /Users/twokdin/Documents/GitHub/Big-Data/sparkjob.py
+
+
+#########
+MongoDB
+#########
+
+sudo mongod --dbpath=/Users/twokdin/data/db
