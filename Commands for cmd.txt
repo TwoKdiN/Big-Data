@@ -37,6 +37,12 @@ Topic
 cd kafka
 twokdin@Air-TwoKdiN kafka % bin/kafka-topics.sh --create --topic test2 --bootstrap-server localhost:9092
 
+#########
+Spark
+#########
+
+/Users/twokdin/spark/bin spark-shell
+
 
 ~/spark/bin/spark-submit \
 --packages org.apache.spark:spark-streaming-kafka-0-10_2.12:3.0.1,org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.1 /Users/twokdin/Documents/GitHub/Big-Data/sparkjob.py
